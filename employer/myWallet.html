@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Allolancer | My Wallet</title>
+
+    <link href="../assets/img/logo-icon.png" rel="icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 768px) {
+            main#content {
+                padding: 200px 25px 0px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="navbar navbar-em navbar-light px-3 py-md-0 py-3">
+
+        <div id="sidebarToggle" class="ms-sm-3 ">
+            <i class="bi bi-layout-sidebar"></i>
+        </div>
+
+        <ul class="navbar-nav nav-em ms-auto flex-row align-items-md-center">
+            <li class="nav-item btn-9 d-flex align-items-center">
+                <a href="" class="d-flex align-items-center me-4">
+                    <img class="me-3" src="../assets/img/icon/icon-activities.svg" alt="">
+                    Activities
+                </a>
+                <a href="" class="d-flex align-items-center">
+                    <img class="me-3" src="../assets/img/icon/icon-jobs.svg" alt="">
+                    Jobs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="btn-10">
+                    <i class="bi bi-plus-circle me-2"></i> Post a job
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-envelope"></i>
+
+                    <span class="position-absolute translate-middle badge rounded-pill badge-message">
+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Lorem Ipsum</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">30 min ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+
+                        <div>
+                            <h6 class="mb-0">Atque rerum nesciunt</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">1 hr ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Sit rerum fuga</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">2 hrs ago</small>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-bell"></i>
+                    <span class="position-absolute translate-middle badge rounded-pill badge-notification">
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Lorem Ipsum</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">30 min ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Atque rerum nesciunt</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">1 hr ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Sit rerum fuga</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">2 hrs ago</small>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown nav-item-profile">
+                <a class="nav-link d-flex align-items-center" href="#" id="profileDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    <img src="../assets/img/demo-br.jpg" alt="Profile" class="rounded-circle me-3" width="32"
+                        height="32">
+                    <span>Norman</span>
+                    <i class="bi bi-caret-down-fill mx-1"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar sidebar-em d-flex flex-column">
+        <div class="logo">
+            <img class="img-fluid" src="../assets/img/logo.svg" alt="logo">
+        </div>
+
+        <div class="profile-toggle d-flex align-items-center justify-content-between btn-1 px-3 py-1">
+            <div>
+                <div id="roleLabel" class="fs-6 role-active">Freelancer</div>
+                <div id="roleSub" class="text-muted">Switch to Employer</div>
+            </div>
+            <!-- Bootstrap Switch -->
+            <div class="form-check form-switch m-0">
+                <input class="form-check-input" type="checkbox" id="roleSwitch" checked>
+            </div>
+        </div>
+
+        <div class="nav-page list-group list-group-flush mt-3">
+            <a href="profileOverview.html" class="list-group-item list-group-item-action nav-link ">
+                <img src="../assets/img/icon/icon-dash.svg" alt="" class="sidebar-icon"><span>Dashboard</span></a>
+            <a href="workplace.html" class="list-group-item list-group-item-action nav-link ">
+                <img src="../assets/img/icon/icon-job.svg" alt="" class="sidebar-icon"><span>Workspace</span></a>
+
+            <a href="#" class="list-group-item list-group-item-action nav-link active">
+                <img src="../assets/img/icon/icon-wallet.svg" alt="" class="sidebar-icon "><span>My Wallet</span></a>
+            <a href="settings.html" class="list-group-item list-group-item-action nav-link">
+                <img src="../assets/img/icon/icon-settings.svg" alt="" class="sidebar-icon"><span>Settings</span></a>
+        </div>
+        <div class="mb-4 mt-auto mx-auto">
+            <button class="btn language-dropdown dropdown-toggle" type="button" id="languageMenu"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe me-3"></i> <span id="selectedLang">English</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageMenu">
+                <li><a class="dropdown-item" href="#" data-lang="English">English</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="Español">Español</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="Français">Français</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content" class="w-content">
+        <div class="content-inner">
+            <div class="content-top d-flex flex-sm-row flex-column align-items-sm-end justify-content-between mb-4">
+                <div>
+                    <h1 class="content-title">My Wallet</h1>
+                    <h4 class="content-subTitle mb-sm-0 mb-4">Manage your payments and transactions</h4>
+                </div>
+                <div class="btn-6"><i class="bi bi-flag me-1"></i>Report an issue</div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="stat-card current-balance p-4">
+                        <h1 class="box-title">Balance</h1>
+                        <h1 class="balance">$240.25</h1>
+                        <h6 class="text-lightGreen">Available for withdraw</h6>
+                        <button href="" class="btn-3 font-600">Withdraw</button>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="stat-card future-balance p-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="box-title mb-0">Future Payments</h1><i
+                                class="bi bi-question-circle text-lightGreen"></i>
+                        </div>
+
+                        <h2 class="text-currency">$800.00</h2>
+                        <h6 class="text-lightGreen">Payments being cleared</h6>
+                        <hr>
+                        <h2 class="text-currency">$1,250.00</h2>
+                        <h6 class="text-lightGreen mb-0">Payments for active orders</h6>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="stat-card total-earnings p-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h1 class="box-title mb-0">Earnings</h1><i
+                                class="bi bi-question-circle text-lightGreen"></i>
+                        </div>
+
+                        <h2 class="text-currency">$65,000.21</h2>
+                        <h6 class="text-lightGreen">Earnings to date</h6>
+                        <hr>
+                        <h2 class="text-currency">$64,975.21</h2>
+                        <h6 class="text-lightGreen mb-0">Total withdraws</h6>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Toggle Section -->
+            <div class="toggle-section mb-4">
+                <div class="d-flex-mobile">
+                    <div class="toggle-buttons">
+                        <button class="toggle-btn active" data-filter="all">All</button>
+                        <button class="toggle-btn" data-filter="earnings">Earnings</button>
+                        <button class="toggle-btn" data-filter="withdrawals">Withdrawals</button>
+                    </div>
+
+                    <div class="date-filter btn-6">
+                        <span>Date range</span>
+                        <i class="bi bi-funnel ms-2"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Section -->
+            <div class="table-container mb-4">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Activity</th>
+                            <th>Description</th>
+                            <th>From</th>
+                            <th>Order #</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionTable">
+                        <tr class="clearing-row">
+                            <td>5/17/2025</td>
+                            <td>
+                                <span class="status-clearing">Clearing</span>
+                                <div class="days-left"><span>(24.30%)</span> 6 days left</div>
+                            </td>
+                            <td>Order will be clear in 6 days</td>
+                            <td>Alex N</td>
+                            <td><a href="#" class="order-id"># VW7-E92</a></td>
+                            <td><span class="amount-positive">$200.00</span></td>
+                        </tr>
+
+                        <tr class="clearing-row">
+                            <td>5/17/2025</td>
+                            <td>
+                                <span class="status-clearing">Clearing</span>
+                                <div class="days-left"><span>(24.30%) </span>6 days left</div>
+                            </td>
+                            <td>Order will be clear in 6 days</td>
+                            <td>Alex N</td>
+                            <td><a href="#" class="order-id"># VW7-E92</a></td>
+                            <td><span class="amount-positive">$240.25</span></td>
+                        </tr>
+
+                        <tr class="earning-row">
+                            <td>5/17/2025</td>
+                            <td><span class="status-earning">Earning</span></td>
+
+                            <td>Order</td>
+                            <td>Alex N</td>
+                            <td><a href="#" class="order-id"># VW7-E92</a></td>
+                            <td><span class="amount-positive">$110.49</span></td>
+                        </tr>
+
+                        <tr class="withdrawal-row">
+                            <td>5/17/2025</td>
+                            <td><span class="status-withdrawal">Withdrawal</span></td>
+                            <td>Transferred successfully</td>
+                            <td>PayPal</td>
+                            <td><a href="#" class="order-id"># VW7-E92</a></td>
+                            <td><span class="amount-negative">-$110.49</span></td>
+                        </tr>
+
+                        <tr class="earning-row">
+                            <td>5/17/2025</td>
+                            <td><span class="status-earning">Earning</span></td>
+                            <td>Order</td>
+                            <td>Peter M</td>
+                            <td><a href="#" class="order-id"># VW7-E92</a></td>
+                            <td><span class="amount-positive">$110.49</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex">
+        <ul id="footer-links" class="d-flex justify-content-center align-items-center">
+            <li><a href="">User Agreement</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Marketing Program</a></li>
+
+        </ul>
+
+    </footer>
+
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

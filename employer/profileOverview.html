@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Allolancer | Profile Overview</title>
+
+    <link href="../assets/img/logo-icon.png" rel="icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/forms.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width: 768px) {
+           main#content {
+               padding: 200px 25px 0px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="navbar" class="navbar navbar-em navbar-light px-3 py-md-0 py-3">
+
+        <div id="sidebarToggle" class="ms-sm-3 ">
+            <i class="bi bi-layout-sidebar"></i>
+        </div>
+
+        <ul class="navbar-nav nav-em ms-auto flex-row align-items-md-center">
+            <li class="nav-item btn-9 d-flex align-items-center">
+                <a href="" class="d-flex align-items-center me-4">
+                    <img class="me-3" src="../assets/img/icon/icon-activities.svg" alt="">
+                    Activities
+                </a>
+                <a href="" class="d-flex align-items-center">
+                    <img class="me-3" src="../assets/img/icon/icon-jobs.svg" alt="">
+                    Jobs
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="btn-10">
+                    <i class="bi bi-plus-circle me-2"></i> Post a job
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-envelope"></i>
+
+                    <span class="position-absolute translate-middle badge rounded-pill badge-message">
+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Lorem Ipsum</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">30 min ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+
+                        <div>
+                            <h6 class="mb-0">Atque rerum nesciunt</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">1 hr ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Sit rerum fuga</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">2 hrs ago</small>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="bi bi-bell"></i>
+                    <span class="position-absolute translate-middle badge rounded-pill badge-notification">
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Lorem Ipsum</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">30 min ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Atque rerum nesciunt</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">1 hr ago</small>
+                        </div>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="px-3 py-1 d-flex align-items-start">
+                        <div>
+                            <h6 class="mb-0">Sit rerum fuga</h6>
+                            <small>Quae dolorem earum veritatis oditseno</small><br>
+                            <small class="text-muted">2 hrs ago</small>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown nav-item-profile">
+                <a class="nav-link d-flex align-items-center" href="#" id="profileDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    <img src="../assets/img/demo-br.jpg" alt="Profile" class="rounded-circle me-3" width="32"
+                        height="32">
+                    <span>Norman</span>
+                    <i class="bi bi-caret-down-fill mx-1"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar sidebar-em d-flex flex-column">
+        <div class="logo">
+            <img class="img-fluid" src="../assets/img/logo.svg" alt="logo">
+        </div>
+
+        <div class="profile-toggle d-flex align-items-center justify-content-between btn-1 px-3 py-1">
+            <div>
+                <div id="roleLabel" class="fs-6 role-active">Freelancer</div>
+                <div id="roleSub" class="text-muted">Switch to Employer</div>
+            </div>
+            <!-- Bootstrap Switch -->
+            <div class="form-check form-switch m-0">
+                <input class="form-check-input" type="checkbox" id="roleSwitch" checked>
+            </div>
+        </div>
+
+        <div class="nav-page list-group list-group-flush mt-3">
+            <a href="#" class="list-group-item list-group-item-action nav-link active">
+                <img src="../assets/img/icon/icon-dash.svg" alt="" class="sidebar-icon"><span>Dashboard</span></a>
+            <a href="workplace.html" class="list-group-item list-group-item-action nav-link">
+                <img src="../assets/img/icon/icon-job.svg" alt="" class="sidebar-icon"><span>Workspace</span></a>
+            <a href="myWallet.html" class="list-group-item list-group-item-action nav-link">
+                <img src="../assets/img/icon/icon-wallet.svg" alt="" class="sidebar-icon"><span>My Wallet</span></a>
+            <a href="settings.html" class="list-group-item list-group-item-action nav-link">
+                <img src="../assets/img/icon/icon-settings.svg" alt="" class="sidebar-icon"><span>Settings</span></a>
+        </div>
+        <div class="mb-4 mt-auto mx-auto">
+            <button class="btn language-dropdown dropdown-toggle" type="button" id="languageMenu"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe me-3"></i> <span id="selectedLang">English</span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageMenu">
+                <li><a class="dropdown-item" href="#" data-lang="English">English</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="Español">Español</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="Français">Français</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content">
+        <div class="content-inner">
+            <div class="content-top">
+                <h1 class="content-title">Profile Overview</h1>
+                <h4 class="content-subTitle">Manage your professional profile and portfolio</h4>
+            </div>
+            <div class="content-profile primary-content-box p-4 pb-5">
+
+                <div class="profile-details row d-flex flex-md-row flex-column  flex-wrap justify-content-between ">
+
+                    <!-- Profile-details -->
+                    <div class="col-md-7 d-flex flex-md-row flex-column align-items-start ">
+                        <div class="d-flex flex-sm-column flex-row gap-sm-0 gap-4 align-items-center me-4">
+                            <div class="d-flex position-relative">
+                                <img src="../assets/img/demo-br.jpg" alt="profile" class="profile-img">
+                                <img src="../assets/img/icon/icon-unverify.svg" alt="" class="ver-badge">
+                            </div>
+                            <div id="verification"  style="width: max-content;" class="btn-unverify btn-2 text-center">Verify ID</div>
+                        </div>
+                        <div class="d-flex flex-column align-items-start">
+                            <div
+                                 class="d-flex flex-lg-row flex-column align-items-center flex-wrap justify-content-start mb-sm-1 mb-3">
+                                <span class="name me-2">Norman Fox</span>
+                                <p class="status-time mb-0">
+                                    <span id="status" class="status">
+                                        <span id="activity" class="active">● </span>
+                                        Online </span>
+                                    . <span class="time">11:49 AM</span>
+                                    local time
+                                </p>
+
+                            </div>
+                            <div
+                                class="country-lang d-flex flex-sm-row flex-column align-items-sm-center align-items-start">
+                                <div class="d-flex align-items-center">
+                                    <img src="../assets/img/country-sw.png" alt="" class="flag">
+                                    <p class="country">Sweden </p>
+                                    <p>&nbsp;.&nbsp;</p>
+                                </div>
+                                <p class="language"> Speaks English, Swedish, French</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-2">
+                                <img src="../assets/img/icon/icon-r-star.svg" alt="" class="r-star me-2">
+                                <span class="a-rating me-2">4.9</span>
+                                <a href="#" class="t-rating btn-1 px-3 py-2">325 reviews</a>
+                            </div>
+
+
+                              <div class="d-flex flex-lg-row flex-column flex-wrap align-items-start gap-4 mt-4">
+                                <a class="d-flex align-items-center btn-3 btn-edit me-3" id="openPopup"><i
+                                        class="bi bi-pencil"></i>&nbsp; Edit Profile</a>
+                                <a class="d-flex align-items-center btn-2 btn-marketing mt-0"><img
+                                        src="../assets/img/icon/icon-join.svg" class="marketing" alt=""> &nbsp; Join
+                                    Marketing Program</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   <!-- Invite Box -->
+                    <div class="col-lg-4 btn-2 invite-box p-sm-3 p-4 mt-4 mt-lg-0">
+                        <h6 class="text-center mb-3">My Invitation Code</h6>
+                        <label class="invite mb-2">Copy your profile link</label>
+                        <div class="d-flex flex-row align-items-center justify-content-between btn-invite btn-4">
+                            <h5 class="invite-link mb-0 me-lg-4 me-3">Allolancer/AndersRimos</h5>
+                            <a href="" class="btn-3 btn-copy d-flex"><i class="bi bi-copy me-lg-3"></i>
+                                <p class="d-lg-block d-none mb-0">Copy</p>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-row flex-column align-items-center pt-4 pb-2">
+                            <p class="i-friends">Invite friends and earn rewards!</p>
+                            <div class="invite-social">
+                                <a href="" class="me-1"><img src="../assets/img/icon/icon-tg.svg" alt=""> </a>
+                                <a href="" class="me-1"><img src="../assets/img/icon/icon-wp.svg" alt=""> </a>
+                                <a href=""><img src="../assets/img/icon/icon-mail.svg" alt=""> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="stat-card">
+                        <div class="stat-title d-flex justify-content-between">Profile Completion
+                            <div class="s-t-icon d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/icon/icon-profile-complete.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="stat-value mt-4">80%</div>
+                        <div class="stat-progress progress my-2">
+
+                            <div class="progress-bar"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="stat-card">
+                        <div class="stat-title d-flex justify-content-between">Total Revies
+                            <div class="s-t-icon d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/icon/icon-reviews.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="stat-value mt-4">5,247</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="stat-card">
+                        <div class="stat-title d-flex justify-content-between">Projects Completed
+                            <div class="s-t-icon d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/icon/icon-project-complete.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="stat-value mt-4">47</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="stat-card">
+                        <div class="stat-title d-flex justify-content-between">Hours Worked
+                            <div class="s-t-icon d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/icon/icon-hours.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="stat-value mt-4">247</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Jobs -->
+            <h1 class="job-control mt-3">Profile Overview</h1>
+            <h4 class="content-subTitle">Manage your professional profile and portfolio</h4>
+
+            <div class="primary-content-box job-status d-flex flex-column justify-content-evenly">
+                <div class="fixed-width">
+                    <div class="row flex-row justify-content-between j-s-title pb-3 pb-md-0">
+                        <div class="col-3">Freelancer</div>
+                        <div class="col-3">Job</div>
+                        <div class="col-2">Due on</div>
+                        <div class="col-2">Total</div>
+                        <div class="col-2">Current Status</div>
+                    </div>
+                    <div
+                        class="row flex-row justify-content-between align-items-center w-auto btn-2 mt-2  py-3 px-0  gap-0 ">
+                        <div class="buyer d-flex align-items-center col-3">
+                            <img src="../assets/img/demo-pr.jpg" alt="" class="buyer-img">
+                            <div class="buyer-info">
+                                <h5 class="buyer-name text-dark">Anders Rimors</h5>
+                                <h6 class="buyer-url text-grey">@apple</h6>
+                            </div>
+                        </div>
+                        <div class="job-info col-3">
+                            <h5 class="job-name text-dark">UI UX Designer</h5>
+                            <h6 class="job-category text-grey">Business Digitalization</h6>
+                        </div>
+                        <div class="job-time col-2">
+                            <h5 class="job-due text-dark">Jan 18</h5>
+                            <h6 class="job-started text-grey">Started 3 days ago</h6>
+                        </div>
+                        <div class="col-2">
+                            <h5 class="job-cost text-dark">$80</h5>
+                            <h6 class="del-type text-grey">On delivery</h6>
+                        </div>
+                        <div class="col-2">
+                            <div class="btn-job-status s-progress">in Progress</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex">
+        <ul id="footer-links" class="d-flex justify-content-center align-items-center">
+            <li><a href="">User Agreement</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Marketing Program</a></li>
+
+        </ul>
+
+    </footer>
+
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="step-1">
+                <div class="w-100">
+                    <button class="btn-close position-absolute fw-bold top-0 end-0 m-4" id="closePopup"></button>
+                    <div class="card-body p-0">
+                        <div class="row justify-content-between ps-4 pe-md-5 pe-3 py-4 g-0">
+                            <h1 class="form-title pt-3 pb-4">Complete Your Profile</h1>
+                            <!-- Left Sidebar: Navigation -->
+                            <div class="col-lg-3 pe-4">
+
+                                <nav id="step-navigation">
+                                    <a href="#" class="step-nav-item active-step">
+                                        <div class="step-number">1</div>
+                                        <span class="step-title">Company Info</span>
+                                    </a>
+                                    <a href="#" class="step-nav-item">
+                                        <div class="step-number">2</div>
+                                        <span class="step-title">Preferences</span>
+                                    </a>
+
+                                </nav>
+                            </div>
+
+                            <!-- Right Content: Form Sections -->
+                            <div class="col-lg-9 form-section p-4 position-relative">
+
+
+                                <div id="form-steps-container" class="pe-3">
+                                    <!-- This is now the main content area for this page -->
+                                    <div id="step-1" class="form-step">
+                                        <div class="text-center mb-3">
+                                            <p class="text-muted mb-2">Upload your profile image</p>
+                                            <label for="profile-image-upload" class="file-upload-label mx-auto">
+                                                <i class="bi bi-camera"></i>
+                                            </label>
+                                            <input type="file" id="profile-image-upload" class="d-none"
+                                                accept="image/*">
+                                        </div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="" class="form-label">Full Name</label>
+                                                <input type="text" placeholder="Enter your full name"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Company Name</label>
+                                                    <input type="text" value="Name" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Company Number</label>
+                                                    <input type="text" placeholder="Company Number"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">VAT Number</label>
+                                                    <input type="text" placeholder="VAT Number" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="phone" class="form-label">Phone Number</label>
+                                                    <div class="input-group">
+                                                        <select class="form-select select-code flex-grow-0"
+                                                            style="width: 5rem;">
+                                                            <option>+1</option>
+                                                            <option>+44</option>
+                                                            <option>+91</option>
+                                                        </select>
+                                                        <input type="tel" id="phone" value="056xxxxx"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Address</label>
+                                                <input type="text" id="address" placeholder="233 street, texas"
+                                                    class="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- Form Navigation -->
+                                <div class="mt-4 pt-4 d-flex justify-content-end align-items-center nav-buttons gap-3">
+                                    <a href="#" class="button-prev d-flex align-items-center b-step1"><i
+                                            class="bi bi-arrow-left me-2"></i> Previous</a>
+                                    <a href="#" class="button-next d-flex align-items-center">Next <i
+                                            class="bi bi-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-2" style="display: none;">
+                <div class="w-100">
+                    <button class="btn-close position-absolute fw-bold top-0 end-0 m-4" id="closePopup2"></button>
+                    <div class="card-body p-0">
+                        <div class="row justify-content-between ps-4 pe-md-5 pe-3 py-4 g-0">
+                            <h1 class="form-title pt-3 pb-4">Complete Your Profile</h1>
+                            <!-- Left Sidebar: Navigation -->
+                            <div class="col-lg-3 pe-4">
+
+                                <nav id="step-navigation">
+                                    <a href="#" class="step-nav-item ">
+                                        <div class="step-number"><img src="/assets/img/icon/icon-check.svg" alt="">
+                                        </div>
+                                        <span class="step-title">Company Info</span>
+                                    </a>
+                                    <a href="#" class="step-nav-item active-step">
+                                        <div class="step-number">2</div>
+                                        <span class="step-title">Preferences</span>
+                                    </a>
+
+                                </nav>
+                            </div>
+
+                            <!-- Right Content: Form Sections -->
+                            <div class="col-lg-9 form-section p-4 position-relative">
+
+
+                                <div id="form-steps-container" class="pe-3">
+                                    <!-- This is now the main content area for this page -->
+                                    <div id="step-1" class="form-step">
+
+                                        <form>
+                                            <div class="row g-4">
+                                                <div class="col-md-12">
+                                                    <div class="info-visible "><i
+                                                            class="bi bi-info-circle me-2"></i> This
+                                                        information is only visible to our team and will not be shown
+                                                        publicly.
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- Slider 1: Accuracy -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Accuracy</h5>
+                                                    <p>Expected Level of accuracy expected</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="50" data-label-id="accuracy-level">
+                                                        <div class="level-label" id="accuracy-level">Neutral Level</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Slider 2: Speed -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Speed</h5>
+                                                    <p>Expected project delivery speed expected</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="75" data-label-id="speed-level">
+                                                        <div class="level-label" id="speed-level">High</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Slider 3: Timeliness -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Timeliness</h5>
+                                                    <p>Importance of meeting project timeline</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="80" data-label-id="timeliness-level">
+                                                        <div class="level-label" id="timeliness-level">High</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Slider 4: Quality -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Quality</h5>
+                                                    <p>Expected quality of the delivery</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="95" data-label-id="quality-level">
+                                                        <div class="level-label" id="quality-level">Very High</div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Slider 5: Work Experience -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Work Experience</h5>
+                                                    <p>Expected work experience</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="60" data-label-id="experience-level">
+                                                        <div class="level-label" id="experience-level">Neutral Level
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Slider 6: Price -->
+                                                <div class="col-md-6 slider-item">
+                                                    <h5>Price</h5>
+                                                    <p>Expectation of budget and price range</p>
+                                                    <div class="slider-container">
+                                                        <input type="range" class="form-range skill-slider" min="0"
+                                                            max="100" value="55" data-label-id="price-level">
+                                                        <div class="level-label" id="price-level">Neutral Level</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- Form Navigation -->
+                                <div class="mt-4 pt-4 d-flex justify-content-end align-items-center nav-buttons gap-3">
+                                    <a href="#" class="button-prev d-flex align-items-center"><i
+                                            class="bi bi-arrow-left me-2"></i> Previous</a>
+                                    <a href="#" class="button-next d-flex align-items-center">Complete Profile <i
+                                            class="bi bi-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <style>
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            overflow-y: hidden;
+            padding: 20px;
+        }
+
+        /* Popup box */
+        .popup {
+            background: #fff;
+            width: 95%;
+            height: auto;
+            max-height: 95vh;
+            border-radius: 8px;
+            position: relative;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            margin: auto;
+        }
+    </style>
+    <script>
+        // ...existing code...
+        const openPopup = document.getElementById("openPopup");
+        const closePopup = document.getElementById("closePopup");
+        const popupOverlay = document.getElementById("popupOverlay");
+        const step1 = popupOverlay.querySelector('.step-1');
+        const step2 = popupOverlay.querySelector('.step-2');
+        const buttonNext = popupOverlay.querySelector('.step-1 .button-next');
+        const buttonPrev = popupOverlay.querySelector('.step-2 .button-prev');
+        const buttonComplete = popupOverlay.querySelector('.step-2 .button-next');
+        const closePopup2 = document.getElementById("closePopup2");
+
+        openPopup.addEventListener("click", function (e) {
+            e.preventDefault();
+            popupOverlay.style.display = "flex";
+            step1.style.display = "block";
+            if (step2) step2.style.display = "none";
+        });
+
+        closePopup.addEventListener("click", function () {
+            popupOverlay.style.display = "none";
+            step1.style.display = "block";
+            if (step2) step2.style.display = "none";
+        });
+
+        if (closePopup2) {
+            closePopup2.addEventListener("click", function () {
+                popupOverlay.style.display = "none";
+                step1.style.display = "block";
+                if (step2) step2.style.display = "none";
+            });
+        }
+
+        buttonNext.addEventListener("click", function (e) {
+            e.preventDefault();
+            step1.style.display = "none";
+            if (step2) step2.style.display = "block";
+        });
+
+        if (buttonPrev) {
+            buttonPrev.addEventListener("click", function (e) {
+                e.preventDefault();
+                step2.style.display = "none";
+                step1.style.display = "block";
+            });
+        }
+
+        if (buttonComplete) {
+            buttonComplete.addEventListener("click", function (e) {
+                e.preventDefault();
+                popupOverlay.style.display = "none";
+                step1.style.display = "block";
+                if (step2) step2.style.display = "none";
+            });
+        }
+
+        window.addEventListener("click", function (e) {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = "none";
+                step1.style.display = "block";
+                if (step2) step2.style.display = "none";
+            }
+        });
+    </script>
+
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/forms.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allolancer - AI Freelance Platform</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --primary-dark: #073B32;
+            --accent-lime: #7CBA28;
+            --light-bg: #F8FAF9;
+            --text-muted: #6c757d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Navbar */
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .btn-primary-dark {
+            background-color: var(--primary-dark);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .btn-outline-dark {
+            border-color: #ddd;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image:
+                linear-gradient(35deg, rgba(4, 83, 70, 0.5), rgba(7, 59, 50, 0.8)),
+                url('./assets/img/home.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        /* Step Circles */
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-lime);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background: rgba(124, 186, 40, 0.1);
+            color: var(--accent-lime);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: linear-gradient(90deg, #073B32 0%, #0b5e4f 100%);
+            color: white;
+            padding: 50px 0;
+        }
+
+        /* CTA Box */
+        .cta-container {
+            background-color: var(--primary-dark);
+            border-radius: 20px;
+            padding: 60px;
+            color: white;
+        }
+
+        /* Updated Footer Styles */
+        footer {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 80px 0 30px;
+            border-top: none;
+        }
+
+        footer h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #cbd5e0;
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 12px;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-lime);
+        }
+
+        /* Newsletter Input */
+        .footer-input-group {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            padding: 5px 5px 5px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-input-group input {
+            background: transparent;
+            border: none;
+            color: white;
+            width: 100%;
+            outline: none;
+        }
+
+        .footer-input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-send-btn {
+            background: #1a4d44;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Download Buttons */
+        .download-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .download-btn {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: transparent;
+            color: white;
+            border-radius: 12px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .download-btn i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .download-btn .small-text {
+            font-size: 0.7rem;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .download-btn .main-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Bottom Bar */
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            margin-top: 50px;
+        }
+
+        .social-icons i {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .back-to-top {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Talents</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Help Center</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2 fw-bold text-dark" href="#">About Us</a></li>
+                </ul>
+                <div>
+                    <button class="btn btn-link text-dark text-decoration-none">Login</button>
+                    <button class="btn btn-primary-dark px-4 ms-2">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            
+            <h1 class="display-4 fw-bold mb-4">Allolancer Platform</h1>
+            <p class="lead mx-auto" style="max-width: 700px; opacity: 0.9;">
+                Allolancer is a cutting-edge freelancer platform that leverages artificial intelligence to connect
+                businesses with top-tier freelance talent.
+            </p>
+            <a href="./employer/profileOverview.html" class="btn btn-light fs-4 fw-bold px-5">Learn More</a>
+        </div>
+    </section>
+
+    <section class="py-5 mt-5">
+        <div class="container text-center">
+            <p class="text-success fw-bold mb-1">Welcome to Allolancer</p>
+            <h2 class="fw-bold mb-4">AI-Powered Freelance Platform</h2>
+            <p class="text-muted mx-auto mb-5" style="max-width: 800px;">Our platform revolutionizes the way freelancers
+                and clients collaborate, making the process more efficient, transparent, and rewarding.</p>
+
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-md-3">
+                    <div class="step-circle">1</div>
+                    <p class="fw-bold">Create your account</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-circle">2</div>
+                    <p class="fw-bold">Complete your profile</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-circle">3</div>
+                    <p class="fw-bold">Start connecting!</p>
+                </div>
+            </div>
+            <button class="btn btn-primary-dark btn-lg px-5">Join Now</button>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-success fw-bold">Why Choose Allolancer?</p>
+                <h2 class="fw-bold">Our Main Features</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="bi bi-cpu"></i></div>
+                        <h5>AI-Powered Matching</h5>
+                        <p class="small text-muted">Advanced AI algorithms analyze requirements to create perfect
+                            matches.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="bi bi-shield-check"></i></div>
+                        <h5>Secure Payments</h5>
+                        <p class="small text-muted">Secure AI-powered escrow systems ensure safe transactions for all.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="bi bi-gem"></i></div>
+                        <h5>Quality Assurance</h5>
+                        <p class="small text-muted">AI systems monitor work quality and provide real-time feedback.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-card">
+                        <div class="icon-box"><i class="bi bi-headset"></i></div>
+                        <h5>24/7 Support</h5>
+                        <p class="small text-muted">Round-the-clock AI support with human backup for complex issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-bar text-center mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="fw-bold">50K+</h2>
+                    <p class="small opacity-75">Active Users</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold">25K+</h2>
+                    <p class="small opacity-75">Projects Completed</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold">4.8/5</h2>
+                    <p class="small opacity-75">User Rating</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold">24/7</h2>
+                    <p class="small opacity-75">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-container text-center">
+                <h2 class="fw-bold mb-3">Do you need anymore information?</h2>
+                <p class="mb-4 opacity-75">Use our help center to educate yourself about our platform</p>
+                <button class="btn btn-light rounded-pill px-4 fw-bold">Help Center</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <h5>Main Categories</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="#" class="footer-link">Graphic & Design</a>
+                            <a href="#" class="footer-link">Programming & Tech</a>
+                            <a href="#" class="footer-link">Digital Marketing</a>
+                            <a href="#" class="footer-link">Video & Animation</a>
+                            <a href="#" class="footer-link">Music & Audio</a>
+                            <a href="#" class="footer-link">Business</a>
+                            <a href="#" class="footer-link">Finance</a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="footer-link">AI Services</a>
+                            <a href="#" class="footer-link">Personal Growth</a>
+                            <a href="#" class="footer-link">Consulting</a>
+                            <a href="#" class="footer-link">Photography</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <h5>About</h5>
+                    <a href="#" class="footer-link">Help</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+
+                <div class="col-lg-5">
+                    <h5>Stay Tuned</h5>
+                    <div class="footer-input-group mb-4">
+                        <input type="text" placeholder="Email Address">
+                        <button class="footer-send-btn"><i class="bi bi-send-fill"></i></button>
+                    </div>
+
+                    <h5>Download our app</h5>
+                    <div class="download-grid">
+                        <a href="#" class="download-btn">
+                            <i class="bi bi-apple"></i>
+                            <div><span class="small-text">Available now</span><span class="main-text">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-btn">
+                            <i class="bi bi-play-fill"></i>
+                            <div><span class="small-text">Available now</span><span class="main-text">Google
+                                    Store</span></div>
+                        </a>
+                        <a href="#" class="download-btn">
+                            <i class="bi bi-telegram"></i>
+                            <div><span class="small-text">Telegram Bot</span><span class="main-text">Download Bot</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-btn">
+                            <i class="bi bi-laptop"></i>
+                            <div><span class="small-text">Web app</span><span class="main-text">Download Now</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <a href="#" class="back-to-top text-decoration-none"><i class="bi bi-arrow-up"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="assets/img/logo-f.png" alt="ALLOLANCER"
+                            style="height: 30px;">
+                    </div>
+                    <div class="col-md-4">
+                        <p class="small mb-0 opacity-75">Allolancer international © Ltd. 2025</p>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-md-end align-items-center gap-4">
+                        <div class="social-icons">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-linkedin"></i>
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                        <div class="d-flex gap-3 small">
+                            <span><i class="bi bi-globe me-1"></i> English</span>
+                            <span><i class="bi bi-cash-stack me-1"></i> USD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
